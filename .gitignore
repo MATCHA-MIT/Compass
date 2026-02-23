@@ -1,0 +1,16 @@
+
+## PART: System File
+.DS_Store
+__pycache__
+
+
+## PART: Temporal File Generated
+verilog/
+verilog_original/
+verilog_taint/
+temp/
+
+
+## PART: Local File
+/scripts/server.py
+
