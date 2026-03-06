@@ -2,22 +2,9 @@
 import os, sys
 sys.path.append(os.getcwd())
 
+from scripts.rsync.push import push
 
-def push(SRC_FOLDER_NAME):
-  from scripts.rsync  import rsync
-  from scripts.server import server
 
-  rsync(
-    f".",
-    f"{server['name']}:{server['path']}",
-    [
-      f"scripts",
-      f"src/{SRC_FOLDER_NAME}/generators",
-      f"src/{SRC_FOLDER_NAME}/scripts",
-    ],
-    EXTRA_EXCLUDELIST=[
-    ]
-  )
 
 
 if __name__ == "__main__":

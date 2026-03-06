@@ -12,5 +12,5 @@ temp/
 
 
 ## PART: Local File
-/scripts/server.py
+/scripts/rsync/server.py
 

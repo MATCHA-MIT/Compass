@@ -4,8 +4,8 @@ sys.path.append(os.getcwd())
 
 
 def push():
-  from scripts.rsync  import rsync
-  from scripts.server import server
+  from scripts.rsync.rsync  import rsync
+  from scripts.rsync.server import server
 
   rsync(
     "env",
