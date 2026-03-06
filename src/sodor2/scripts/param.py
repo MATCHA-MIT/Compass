@@ -1,9 +1,8 @@
 
 
 ## NOTE: Customize me for batch run
-CONFIG_ALL = [
-  "MySodor2StageAutoSandboxConfig",
-]
+CONFIG = "MySodor2StageAutoSandboxConfig"
+TCL_PATH = "src/sodor2/veri/1taint_sandbox.tcl"
 
 
 

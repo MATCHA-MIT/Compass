@@ -15,7 +15,6 @@ def genTaintLogic(CONFIG):
 
 
 if __name__ == "__main__":
-  from src.sodor2.scripts.param import CONFIG_ALL
-  for CONFIG in CONFIG_ALL:
-    genTaintLogic(CONFIG)
+  from src.sodor2.scripts.param import CONFIG
+  genTaintLogic(CONFIG)
 
