@@ -9,6 +9,11 @@ verilog/
 verilog_original/
 verilog_taint/
 temp/
+target/
+target.tmp/
+*.jgproject
+/my_db/
+/my_design
 
 
 ## PART: Local File
