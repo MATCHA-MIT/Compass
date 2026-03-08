@@ -181,7 +181,7 @@ class CtlPath(implicit val conf: SodorCoreParams) extends Module
 
    if (conf.markFor=="auto_sandbox") {
       iftConfig(cs_mem_en, "Refined")  // 2-2
-      iftConfig(cs_br_type, "Refined")  // 3-1
+      iftConfig(cs_br_type, "Refined")  // 2-3
    }
 
 

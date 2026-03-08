@@ -34,3 +34,24 @@ def changeFirTopModule_updateFlag(flag, line, words, module_top):
 
   return flag, line
 
+INITIAL_ABSTRACT_SIGNALS = []
+for i in (list(range(0, 16)) + list(range(64, 80))):
+  for j in range(3, -1, -1):
+    INITIAL_ABSTRACT_SIGNALS.append(
+      f"veri_1taint.uArch.memory_taint.mem_{i}_{j}[7:0]")
+REVERTED_SIGNALS = ([
+  "veri_1taint.uArch.memory_taint.mem_79_3[7:0]",
+  "veri_1taint.uArch.memory_taint.mem_79_2[7:0]",
+  "veri_1taint.uArch.memory_taint.mem_79_1[7:0]",
+  "veri_1taint.uArch.memory_taint.mem_79_0[7:0]",
+  ], 8)
+MODULE_WRAPPER = "veri_1taint"
+obsvSignal = "veri_1taint.uArch_obsv_taint"
+obsvList = [
+  "uArch.core_taint.d_taint.my_commit_valid",
+  "uArch.core_taint.my_imem_valid",
+  "uArch.core_taint.my_imem_addr",
+  "uArch.core_taint.my_dmem_valid",
+  "uArch.core_taint.my_dmem_addr",
+]
+

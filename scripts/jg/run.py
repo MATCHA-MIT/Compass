@@ -4,7 +4,7 @@ import os, sys
 sys.path.append(os.getcwd())
 
 
-def run(CONFIG, TCL_PATH, STALL, PROJECT_NAME="project"):
+def run(CONFIG, TCL_PATH, STALL):
   projFolder = TCL_PATH[:-4] + f"_{CONFIG}.jgproject"
 
   command  = ""

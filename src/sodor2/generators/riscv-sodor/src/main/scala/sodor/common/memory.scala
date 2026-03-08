@@ -185,9 +185,9 @@ class MemoryModule(numBytes: Int, useAsync: Boolean)(implicit val conf: SodorCor
          mem.write(my_mem_write_addr, memwriter.io.mem_data, my_mem_write_masks)
       }
       if (conf.markFor=="auto_sandbox") {
-         iftConfig(my_mem_write_en, "Refined")  // 6-1
-         iftConfig(my_mem_write_addr, "Refined")  // 6-1
-         iftConfig(my_mem_write_masks, "Refined")  // 6-1
+         iftConfig(my_mem_write_en, "Refined")  // 5-1
+         iftConfig(my_mem_write_addr, "Refined")  // 5-1
+         iftConfig(my_mem_write_masks, "Refined")  // 5-1
       }
    }
 }

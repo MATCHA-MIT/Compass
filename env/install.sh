@@ -71,3 +71,8 @@ ninja -C build bin/firtool
 cd ..
 export PATH=$envDir/Compass-circt/build/bin:$PATH
 
+
+
+
+## STEP: Python libs
+python3 -m pip install vcdvcd==2.3.6

@@ -323,14 +323,11 @@ class DatPath(implicit val p: Parameters, val conf: SodorCoreParams) extends Mod
 
    if (conf.markFor=="auto_sandbox") {
       iftConfig(this, "Naive, PerWord")  // 2-1
-      iftConfig(exe_rs1_addr, "Refined")  // 3-2
-      iftConfig(io.ctl.alu_fun, "Refined")  // 3-3
-      iftConfig(io.ctl.mem_val, "Refined")  // 4-1
-      iftConfig(io.ctl.op2_sel, "Refined")  // 4-2
-      iftConfig(exe_wbaddr, "Refined")  // 4-3
-      iftConfig(exe_wben, "Refined")  // 4-3
-      iftConfig(io.ctl.pc_sel_no_xept, "Refined")  // 5-1
-      iftConfig(io.ctl.wb_sel, "Refined")  // 5-2
+      iftConfig(io.ctl.wb_sel, "Refined")  // 2-4
+      iftConfig(exe_wbaddr, "Refined")  // 3-1
+      iftConfig(exe_wben, "Refined")  // 3-1
+      iftConfig(exe_rs1_addr, "Refined")  // 4-1
+      iftConfig(io.ctl.op2_sel, "Refined")  // 4-1
    }
   
 

@@ -2,6 +2,7 @@
 ## PART: System File
 .DS_Store
 __pycache__
+/sublime.sublime-workspace
 
 
 ## PART: Temporal File Generated
@@ -12,8 +13,6 @@ temp/
 target/
 target.tmp/
 *.jgproject
-/my_db/
-/my_design
 
 
 ## PART: Local File

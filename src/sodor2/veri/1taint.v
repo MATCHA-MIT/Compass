@@ -67,7 +67,7 @@ module veri_1taint(
   // STEP: Concrete initial state.
   // NOTE: This is for concrete simulation to identify source of imprecision.
 `ifdef CONCRETE_RUN
-  `include "src/sodor2/veri/concrete_state.v"
+  `include "src/sodor2/temp/concrete_state.v"
 `else
   wire concrete_state = 1'b1;
 `endif

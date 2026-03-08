@@ -6,6 +6,6 @@ set_capture_elaborated_design on
 
 source src/sodor2/veri/1taint.tcl
 
-file delete -force my_db
-save -dir my_db -elaborated_design my_design -force
+file delete -force src/sodor2/temp/my_db
+save -dir src/sodor2/temp/my_db -elaborated_design src/sodor2/temp/my_design -force
 
