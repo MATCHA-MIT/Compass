@@ -3,10 +3,11 @@ import os
 
 
 ## NOTE: Keep me default.
-DEFAULT_OPT="-rlpgoDiv --relative --delete --checksum"
+DEFAULT_OPT="-rlgoDiv --relative --delete --checksum"
 DEFAULT_EXCLUDELIST=[
   ".DS_Store",
   "__pycache__",
+  ".nfs*",
 ]
 
 

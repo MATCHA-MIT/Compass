@@ -2,7 +2,7 @@
 import os, sys
 sys.path.append(os.getcwd())
 
-from scripts.genTaintLogic  import genTaintLogic as genTaintLogic_global
+from scripts.genTaintLogic    import genTaintLogic as genTaintLogic_global
 from src.sodor2.scripts.param import \
   SRC_FOLDER_NAME, SRC_FILELIST, MODULE_TOP, changeFirTopModule_updateFlag
 

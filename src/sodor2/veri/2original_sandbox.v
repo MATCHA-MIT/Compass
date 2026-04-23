@@ -1,8 +1,8 @@
 
 config cfg;
-    design veri_2original_sandbox;
-    instance veri_2original_sandbox.uArch_1 liblist uArchLib;
-    instance veri_2original_sandbox.uArch_2 liblist uArchLib;
+  design veri_2original_sandbox;
+  instance veri_2original_sandbox.uArch_1 liblist uArchLib;
+  instance veri_2original_sandbox.uArch_2 liblist uArchLib;
 endconfig
 
 

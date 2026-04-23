@@ -1,5 +1,5 @@
 
-# Input design
+## STEP: Input design
 analyze \
   -lib uArchLib -mfcu \
   -y src/sodor2/verilog_taint +libext+.sv +define+SYNTHESIS \
@@ -16,7 +16,7 @@ reset rst -non_resettable_regs 0
 
 
 
-# STEP: Symbolic states
+## STEP: Symbolic states
 abstract -init_value { \
   uArch.memory_taint.mem_0_3  uArch.memory_taint.mem_0_2  uArch.memory_taint.mem_0_1  uArch.memory_taint.mem_0_0 \
   uArch.memory_taint.mem_1_3  uArch.memory_taint.mem_1_2  uArch.memory_taint.mem_1_1  uArch.memory_taint.mem_1_0 \
@@ -68,32 +68,32 @@ assume {tainted_init_secmemd}
 
 
 
-# STEP: Concrete initial state.
-# NOTE: This is for concrete simulation to identify source of imprecision.
+## STEP: Concrete initial state.
+## NOTE: This is for concrete simulation to identify source of imprecision.
 assume {concrete_init_state}
 
 
 
 
-# STEP: Simplification
+## STEP: Simplification
 assume {simplification}
 
 
 
 
-# STEP: Contract assumption check
+## STEP: Contract assumption check
 assume {contract_assumption}
 
 
 
 
-# STEP: Leakage assertion check
+## STEP: Leakage assertion check
 assert {leakage_assertion}
 
 
 
 
-# STEP: Prove
+## STEP: Prove
 set_prove_orchestration off
 set_engine_mode {Ht Mp AM I}
 prove -all -dump_trace -dump_trace_type vcd

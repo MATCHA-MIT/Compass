@@ -1,6 +1,5 @@
 
-
-# STEP: Input design
+## STEP: Input design
 analyze -sv src/sodor2/veri/2original_sandbox.v
 analyze \
   -lib uArchLib -mfcu \
@@ -14,7 +13,7 @@ reset rst -non_resettable_regs 0
 
 
 
-# STEP: Symbolic states
+## STEP: Symbolic states
 abstract -init_value { \
   uArch_1.memory.mem_0_3  uArch_1.memory.mem_0_2  uArch_1.memory.mem_0_1  uArch_1.memory.mem_0_0  \
   uArch_1.memory.mem_1_3  uArch_1.memory.mem_1_2  uArch_1.memory.mem_1_1  uArch_1.memory.mem_1_0  \
@@ -88,31 +87,31 @@ abstract -init_value { \
 
 
 
-# STEP: Simplification
+## STEP: Simplification
 assume {simplification}
 
 
 
 
-# STEP: Same initial public state
+## STEP: Same initial public state
 assume {same_init_pubstate}
 
 
 
 
-# STEP: Contract assumption check
+## STEP: Contract assumption check
 assume {contract_assumption}
 
 
 
 
-# STEP: Leakage assertion check
+## STEP: Leakage assertion check
 assert {leakage_assertion}
 
 
 
 
-# STEP: Prove
+## STEP: Prove
 set_prove_orchestration off
 set_engine_mode {Ht Mp AM I}
 set_prove_time_limit 7d

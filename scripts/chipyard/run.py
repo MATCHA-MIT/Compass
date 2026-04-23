@@ -18,7 +18,7 @@ def run(CONFIG, SRC_FOLDER_NAME, SRC_FILELIST):
   ## STEP: Override updated chisel code.
   cmd  = f""
   cmd += f"cd src/{SRC_FOLDER_NAME} && "
-  cmd += f"cp --parents"
+  cmd += f"cp -r --parents"
   for file in SRC_FILELIST:
     cmd += f" {file}"
   cmd += f" ../../env/chipyard/"

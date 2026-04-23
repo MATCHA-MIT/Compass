@@ -1,8 +1,8 @@
 
 config cfg;
-    design veri_1taint;
-    instance veri_1taint.uArch    liblist uArchLib;
-    instance veri_1taint.ISATaint liblist ISATaintLib;
+  design veri_1taint;
+  instance veri_1taint.uArch    liblist uArchLib;
+  instance veri_1taint.ISATaint liblist ISATaintLib;
 endconfig
 
 

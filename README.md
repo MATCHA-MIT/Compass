@@ -50,13 +50,19 @@ python3 src/sodor2/scripts/genTaintLogic.py
 
 1. Set `TCL_PATH` in `src/sodor2/scripts/param.py` to either `src/sodor2/veri/1taint_sandbox.tcl` or `src/sodor2/veri/2original_sandbox.tcl`.
 
-2. Run:
+2. For taint logic case, run:
+
+```
+python3 src/sodor2/ISATaint/scripts/chisel_run.py
+```
+
+3. Run:
 
 ```
 python3 src/sodor2/scripts/jg_run.py
 ```
 
-3. Results, i.e., Jaspergold folder, is in `src/sodor2/veri`.
+4. Results, i.e., Jaspergold folder, is in `src/sodor2/veri`.
 
 
 #### Run CEGAR loop
