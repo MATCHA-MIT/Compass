@@ -253,8 +253,10 @@ def get_srcOfImprecision(
   ## STEP: Cannot refine list -> so trace back even input is not observable
   cannotRefineSignals = [
     "uArch.tlMasterXbar_taint.portsAOI_filtered_0_ready",
+    "uArch.widget_taint.auto_out_a_ready",
     "uArch.ptw_taint._r_pte_T_23",
     "uArch.frontend_taint.icache_taint.tag_array_0_0",
+    "uArch.frontend_taint._tlb_taint_io_resp_pf_inst",
   ]
   
 
