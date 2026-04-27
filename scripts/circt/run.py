@@ -30,7 +30,7 @@ def run(SRC_FOLDER_NAME, PRESERVE_NAME=False):
   cmd  = f""
   cmd += f"firtool {opt}"
   cmd += f" -o src/{SRC_FOLDER_NAME}/verilog_original"
-  cmd += f" src/{SRC_FOLDER_NAME}/temp/firrtl.fir & "
+  cmd += f" src/{SRC_FOLDER_NAME}/temp/firrtl.fir > /dev/null & "
   
   cmd += f"time -p"
   cmd += f" firtool {opt}"
@@ -38,7 +38,7 @@ def run(SRC_FOLDER_NAME, PRESERVE_NAME=False):
   if PRESERVE_NAME:
     cmd += f" --ift-preserve-name "
   cmd += f" -o src/{SRC_FOLDER_NAME}/verilog_taint"
-  cmd += f" src/{SRC_FOLDER_NAME}/temp/firrtl.fir & "
+  cmd += f" src/{SRC_FOLDER_NAME}/temp/firrtl.fir > /dev/null & "
   
   cmd += f"wait"
   

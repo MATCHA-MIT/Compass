@@ -30,7 +30,7 @@ def run(CONFIG, SRC_FOLDER_NAME, SRC_FILELIST):
   cmd  = f""
   cmd += f"cd env/chipyard/sims/verilator && "
   cmd += f"time -p conda run --no-capture-output make firrtl CONFIG={CONFIG}"
-  cmd += f""
+  cmd += f" > /dev/null"
   print("[command to run]:", cmd)
   os.system(cmd)
 
