@@ -28,9 +28,9 @@ The generated taint logic is sent to model checkers to formally verify security 
 We currently use a commercial software, JasperGold, and assume version 2024.06 is avaliable through `jg` command.
 
 
-## Running Example
+## Running Example for Sodor
 
-#### Generate taint logic for sodor
+#### Generate taint logic
 
 1. Set `CONFIG` in `src/sodor2/scripts/param.py` to either `MySodor2StageNaiveConfig`, `MySodor2StageAutoSandboxConfig`, or `MySodor2StageCelliftConfig`.
 They correspond to naive taint logic, taint logic from user annotation, and cellIFT.
@@ -100,5 +100,5 @@ python3 src/sodor2/scripts/refineForSameCex.py
 8. If eliminated, go back to step 4. Otherwise, go back to step 6.
 
 
-#### More Content (e.g., rocket and boom processors) Will Be Added to This Repo through March 2026.
+#### The same workflow can be done for Rocket and BOOM
 
