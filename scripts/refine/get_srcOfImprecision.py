@@ -257,6 +257,7 @@ def get_srcOfImprecision(
     "uArch.ptw_taint._r_pte_T_23",
     "uArch.frontend_taint.icache_taint.tag_array_0_0",
     "uArch.frontend_taint._tlb_taint_io_resp_pf_inst",
+    "uArch.lsu_taint._dtlb_taint_io_resp_0_pf_ld",
   ]
   
 

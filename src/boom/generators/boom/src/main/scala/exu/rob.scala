@@ -988,6 +988,9 @@ class Rob(
     iftConfig(next_xcpt_uop.br_mask, "Refined")  // 1-28
     iftConfig(io.csr_replay.valid, "Refined")  // 1-28
     iftConfig(rob_tail, "Refined")  // 1-46
+    for (i <- 0 until numWakeupPorts) {
+      iftConfig(io.wb_resps(i).bits.uop.rob_idx, "Refined")  // 12-1
+    }
   }
 
 

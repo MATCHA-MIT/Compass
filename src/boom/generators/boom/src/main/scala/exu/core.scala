@@ -1518,6 +1518,7 @@ class BoomCore()(implicit p: Parameters) extends BoomModule
       iftConfig(dis_uops(i).is_unique, "Refined")  // 3-11
       iftConfig(dis_uops(i).uopc, "Refined")  // 3-11
     }
+    iftConfig(ll_wbarb.io.in(0).valid, "Refined")  // 18-1
   }
 
 

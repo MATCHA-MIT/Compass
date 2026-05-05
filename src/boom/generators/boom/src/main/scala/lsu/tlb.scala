@@ -365,6 +365,10 @@ class NBDTLB(instruction: Boolean, lgMaxSize: Int, cfg: TLBConfig)(implicit edge
     iftConfig(bad_va, "Refined")  // 1-47
     iftConfig(vm_enabled, "Refined")  // 1-47
     iftConfig(io.ptw.resp.valid, "Refined")  // 9-1
+    for (w <- 0 until memWidth) {
+      iftConfig(hitsVec(w), "Refined")  // 16-1
+    }
+    iftConfig(io.ptw.resp.bits.homogeneous, "Refined")  // 16-4
   }
 
 

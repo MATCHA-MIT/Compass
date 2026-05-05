@@ -504,6 +504,7 @@ class ALUUnit(isJmpUnit: Boolean = false, numStages: Int = 1, dataWidth: Int, ma
 
   if (boomParams.markFor=="auto_sandbox") {
     iftConfig(this, "Naive, PerWord")  // 1-32
+    iftConfig(io.req.bits.uop.ctrl.br_type, "Refined")  // 12-2
   }
 
 

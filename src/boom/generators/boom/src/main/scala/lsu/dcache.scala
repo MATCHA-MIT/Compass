@@ -984,6 +984,15 @@ class BoomNonBlockingDCacheModule(outer: BoomNonBlockingDCache) extends LazyModu
     }
     iftConfig(mshrs.io.resp.bits.uop.br_mask, "Refined")  // 3-14
     iftConfig(io.lsu.req.valid, "Refined")  // 10-3
+    for (w <- 0 until memWidth) {
+      iftConfig(s3_bypass(w), "Refined")  // 14-1
+      iftConfig(s4_bypass(w), "Refined")  // 15-1
+    }
+    iftConfig(io.lsu.exception, "Refined")  // 16-2
+    for (w <- 0 until memWidth) {
+      iftConfig(s1_req(w).uop.uses_ldq, "Refined")  // 16-2
+      iftConfig(s5_bypass(w), "Refined")  // 17-1
+    }
   }
 
 

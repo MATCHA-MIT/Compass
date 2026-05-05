@@ -196,6 +196,13 @@ class RegisterFileSynthesizable(
 
   if (boomParams.markFor=="auto_sandbox") {
     iftConfig(this, "Naive, PerWord")  // 8-1
+    for (i <- 0 until numWritePorts) {
+      iftConfig(io.write_ports(i).valid, "Refined")  // 13-1
+      iftConfig(io.write_ports(i).bits.addr, "Refined")  // 13-1
+    }
+    for (i <- 0 until numReadPorts) {
+      iftConfig(read_addrs(i), "Refined")  // 13-2
+    }
   }
 
 

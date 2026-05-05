@@ -1860,6 +1860,9 @@ class LSU(implicit p: Parameters, edge: TLEdgeOut) extends BoomModule()(p)
     for (w <- 0 until memWidth) {
       iftConfig(dmem_req(w).valid, "Refined")  // 10-2
     }
+    iftConfig(stq_execute_head, "Refined")  // 11-1
+    iftConfig(dmem_resp_fired, "Refined")  // 16-3
+    iftConfig(wb_forward_valid, "Refined")  // 16-3
   }
 
 
