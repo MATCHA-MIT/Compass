@@ -1,0 +1,12 @@
+Statistics [for instance "uArchOriginal"]
+---------------------------
+# Flops:         29679 (213252) (0 property flop bits)
+# Latches:       0 (0)
+# Gates:         168376 (1051409)
+# Nets:          178784
+# Ports:         71
+# RTL Lines:     184470
+# RTL Instances: 236
+# Embedded Assumptions: 0
+# Embedded Assertions:  0
+# Embedded Covers:      0

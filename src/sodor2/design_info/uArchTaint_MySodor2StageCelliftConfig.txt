@@ -1,0 +1,12 @@
+Statistics [for instance "uArchTaint"]
+---------------------------
+# Flops:         1158 (11374) (0 property flop bits)
+# Latches:       0 (0)
+# Gates:         34658 (224611)
+# Nets:          35289
+# Ports:         62
+# RTL Lines:     20423
+# RTL Instances: 13
+# Embedded Assumptions: 0
+# Embedded Assertions:  0
+# Embedded Covers:      0

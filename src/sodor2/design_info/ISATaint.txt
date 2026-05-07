@@ -1,0 +1,12 @@
+Statistics [for instance "ISATaint"]
+---------------------------
+# Flops:         3 (97) (0 property flop bits)
+# Latches:       0 (0)
+# Gates:         2110 (4109)
+# Nets:          2430
+# Ports:         5
+# RTL Lines:     1092
+# RTL Instances: 3
+# Embedded Assumptions: 0
+# Embedded Assertions:  0
+# Embedded Covers:      0
