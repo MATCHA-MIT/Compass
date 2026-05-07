@@ -16,6 +16,7 @@ def pull(SRC_FOLDER_NAME):
       f"src/{SRC_FOLDER_NAME}/verilog_taint",
       f"src/{SRC_FOLDER_NAME}/ISATaint/verilog",
       f"src/{SRC_FOLDER_NAME}/veri/*.jgproject",
+      f"src/{SRC_FOLDER_NAME}/design_info",
     ],
     EXTRA_EXCLUDELIST=[
     ]
